@@ -15,7 +15,7 @@ from pathlib import Path
 import environ
 
 env = environ.Env()
-environ.Env.read_env('.env')
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -130,5 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STRIPE_PUBLISHABLE_KEY = env("STRIPE_PUBLISHABLE_KEY")
 STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
-# print(STRIPE_PUBLISHABLE_KEY)
-# print(STRIPE_PUBLISHABLE_KEY)
+print(STRIPE_PUBLISHABLE_KEY)
+print(STRIPE_PUBLISHABLE_KEY)
