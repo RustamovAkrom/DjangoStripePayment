@@ -1,0 +1,6 @@
+__pycache__/
+.git/
+.env
+db.sqlite3
+poetry.lock
+venv/
